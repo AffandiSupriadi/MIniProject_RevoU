@@ -1,7 +1,5 @@
 # Mini coding project from Revou fundamental course
 
-![Instagram Follow](https://www.instagram.com/affn_s/)
-
 This mini coding project was created to fulfill a revou Fundamental Course assignment.
 
 ## Contributors
