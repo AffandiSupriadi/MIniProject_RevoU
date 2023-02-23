@@ -4,8 +4,8 @@ This mini coding project was created to fulfill a revou Fundamental Course assig
 
 ## Website View
 
-![Home]({Assets/Home.png})
-![profile]({Assets/profile.png})
+![Home](Assets/Home.png)
+![profile](Assets/profile.png)
 
 ## Contributors
 
