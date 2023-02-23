@@ -1,6 +1,11 @@
-# Mini coding project from Revou fundamental course
+# Mini Coding Project From Revou Fundamental Course
 
 This mini coding project was created to fulfill a revou Fundamental Course assignment.
+
+## Website View
+
+![image.png]({https://github.com/AffandiSupriadi/MiniProject_RevoU/blob/main/Assets/Home.png})
+![image.png]({https://github.com/AffandiSupriadi/MiniProject_RevoU/blob/main/Assets/profile.png})
 
 ## Contributors
 
