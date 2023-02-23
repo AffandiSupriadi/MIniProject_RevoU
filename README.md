@@ -4,8 +4,8 @@ This mini coding project was created to fulfill a revou Fundamental Course assig
 
 ## Website View
 
-![image.png]({https://github.com/AffandiSupriadi/MiniProject_RevoU/blob/main/Assets/Home.png})
-![image.png]({https://github.com/AffandiSupriadi/MiniProject_RevoU/blob/main/Assets/profile.png})
+![image.png]({/Assets/Home.png})
+![image.png]({/Assets/profile.png})
 
 ## Contributors
 
