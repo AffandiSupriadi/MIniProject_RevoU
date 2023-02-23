@@ -1,0 +1,243 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.garis{  
+    border-top:5px solid #555 ;
+    padding-top: 20px;
+    width: 100%;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+/* phone */
+/* Header phone */
+header{
+    background-color: #ffffff;
+}
+.navbar{
+    display: none;
+}
+.navbar-phone {
+    background-color: #666;
+    text-align: right;
+
+}
+ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    width: 90px;
+    color: white;
+    padding: 25px;
+    display:inline-block;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+    display: inline-block;
+}
+ul li:hover {
+    color: #333;
+    transition: ease 500ms;
+}
+ul li:hover ul {
+    display:flex;
+    flex-direction: column;
+}
+.pages{
+    font-size: 15px;
+    width: 115px;
+    border: 1px white solid;
+    padding: 10px;
+}
+ul li ul {
+    position: absolute;
+    display: none;
+}
+ul li ul li { 
+    color: #ffffff;
+    background: #888; 
+    display: block; 
+}
+
+.pages{
+    color: white;
+}
+.navbar{
+    display: none;
+}
+.logo{
+    float: left;
+    margin-right: none;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+/* main phone */
+.content-title{
+    text-align: center ;
+    padding-top: 30px;
+    padding-bottom: 10px ;
+}
+.content-subtitle{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 30px;
+}
+.content-text{
+    flex: 1;
+}
+.content-img{
+    flex: 1;
+    margin: auto;
+}
+.content-img > img{
+    width: 200px;
+    height: auto;
+}
+#company{
+    background-color: #555;
+    color: white;
+    border-radius: 60px 0px 60px 0px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.company-vision-mission{
+    display: flex;
+    padding: 40px;
+    flex-direction:column;
+}
+.company-mission{
+    padding-top: 30px;
+}
+/* footer phone */
+.revou{
+    margin-left: 20px;
+    padding: 30px;
+    padding-left: 0px;
+}
+.revou-logo{
+    height: 60px;
+    width: 60px;
+}
+.revou > p {
+    font-size: small;
+    padding-top: 20px;
+}
+/* laptop */
+@media only screen and (min-width:600px) {
+/* Header laptop */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+}
+.navbar-phone{
+    display: none;
+}
+.navbar{
+    background-color: #555;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+.navbar div{
+    justify-content: center;
+    padding: 10px;
+    min-width: 70px;
+    height: fit-content;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar div > a{
+    text-decoration-line: none ;
+    color: white;
+}
+.navbar a:hover{
+    color: #333;
+    transition: 500ms;
+}
+.logo{
+    margin-right: auto;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 0px;
+}
+/* main laptop */
+.content-title{
+    text-align: center ;
+    padding-top: 120px;
+    padding-bottom: 10px ;
+}
+.content-subtitle{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+.content-text{
+    flex: 1;
+}
+.content-img{
+    flex: 1;
+}
+#company{
+    background-color: #555;
+    border-radius: 60px 0px 60px 0px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.company-vision-mission{
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+}
+.company-vision-mission div{
+    padding: 20px;
+}
+h3{
+    padding-bottom: 30px;
+}
+ul li{
+    list-style-type: circle;
+}
+.company-vision{
+    flex: 1;
+}
+.company-mission{
+    flex: 1;
+}
+/* footer laptop */
+.revou{
+    padding: 30px;
+    padding-left: 0px;
+}
+.revou-logo{
+    height: 60px;
+    width: 60px;
+}
+.revou > p {
+    font-size: small;
+    padding-top: 20px;
+}
+}
