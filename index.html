@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>affandi_supriadi</title>
+    <link rel="stylesheet" href="CSS/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <img src="Assets/KG.PNG" alt="logo" class="logo"/>
+          <div class="home">
+            <a href="index.html">Home</a>
+          </div>
+          <div class="profile">
+            <a href="profile.html">Profile Us</a></div>
+          <div class="message-us" >
+            <a href="#message">Message Us</a></div>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="navbar-phone">
+          <img src="Assets/KG.PNG" alt="logo" class="logo"/>
+          <ul>
+            <li>
+              <a href="#">Menu</a>
+              <ul>
+                <li><a class="pages" href="index.html">Home</a></li>
+                <li><a class="pages" href="profile.html">Profile Us</a></li>
+                <li><a class="pages" href="#form">Message Us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="content">
+        <div class="container">
+          <div class="content">
+            <h3 class="content-hai">Hi, <span id="your-name"></span> Welcome To Website</h3>
+            <script> 
+              var name = prompt("Masukkan Nama Kamu:");
+              document.getElementById("your-name").innerText = name;
+            </script> 
+            <div class="slider">
+              <img src="https://source.unsplash.com/random/1080x400?Landscape&sig=1" alt="" class="img-slideshow">
+              <img src="https://source.unsplash.com/random/1080x400?Landscape&sig=2" alt="" class="img-slideshow">
+              <img src="https://source.unsplash.com/random/1080x400?Landscape&sig=3" alt="" class="img-slideshow">
+              <button class="previous" onclick="plusDivs(-1)">Previous</button>
+              <button class="next" onclick="plusDivs(1)">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n){
+          showDivs((slideIndex += n));
+        }
+
+        function showDivs(n){
+          var i;
+          var imgList = document.getElementsByClassName("img-slideshow");
+          if (n > imgList.length) slideIndex = 1;
+          else if (n < 1) slideIndex = imgList.length;
+
+          for(i = 0; i < imgList.length; i++) {
+            imgList[i].style.display = "none" ;
+          }
+
+          imgList[slideIndex - 1].style.display = "block" ;
+          }
+
+
+      </script>
+      <div class="container">
+        <section class="headquarter">
+          <h1 class="headquarter-title">Our Headquarter</h1>
+          <div id="headquarter-list">
+            <div class="headquarter-list">
+              <img src="Assets/bandung.png" alt="#" class="list">
+              <h3 class="list-nama">Bandung</h3>
+            </div>
+            <div class="headquarter-list">
+              <img src="Assets/bali.png" alt="#" class="list">
+              <h3 class="list-nama">Bali</h3>
+            </div>
+            <div class="headquarter-list">
+              <img src="Assets/jakarta.png" alt="#" class="list">
+              <h3 class="list-nama">Jakarta</h3>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section id="message">
+        <div class="container">
+          <hr class="garis">
+          <h1 class="message-title">Message Us</h1>
+          <div id="form">
+            <div class="form-row">
+              <div class="form">
+                <div id="form-question">
+                  <div class="form-question">
+                    <p class="form-question-name">Nama</p>
+                    <p class="form-question-name">Tanggal Lahir</p>
+                    <p class="form-question-name">Jenis Kelamin</p>
+                    <p class="form-question-name">Pesan</p>
+                  </div>
+                  <div class="form-question-colon">
+                    <p>:</p>
+                    <p>:</p>
+                    <p>:</p>
+                    <p>:</p>
+                  </div>
+                </div>
+                <form class="form-input" name="message-form" onsubmit="return validateForm()">
+                  <input type="text" class="input" name="your-name" placeholder="Nama" required><br>
+                  <input type="date" class="input" name="your-birthday" required><br>
+                  <div class="input-gender">
+                    <input type="radio" id="male" name="your-gender" value="Laki-laki" required>
+                    <label for="male">Laki-laki</label>
+                    <input type="radio" id="famale" name="your-gender" value="Perempuan"required>
+                    <label for="famale">Perempuan</label><br>
+                  </div>
+                  <textarea class="input" name="your-message" placeholder="Pesan" required></textarea>
+                  <input class="submit" type="submit" value="submit">
+                </form>
+              </div>
+            </div>
+            <script>
+              function validateForm(){
+                var name= document.forms["message-form"]["your-name"].value;
+                var birthday= document.forms["message-form"]["your-birthday"].value;
+                var gender= document.forms["message-form"]["your-gender"].value;
+                var message= document.forms["message-form"]["your-message"].value;
+/* 
+                if (name == "" || birthday == "" || gender == "" || message ==""){
+                  alert("input tidak boleh kosong");
+                  return false;
+
+              <p>Nama :<span id="sender-name"></span></p>
+              <p>Tanggal lahir :<span id="sender-birthday"></span></p>
+              <p>Jenis Kelamin :<span id="sender-gender"></span></p>
+              <p>Pesan :<span id="sender-message"></span></p>
+                }
+*/
+                document.getElementById("sender-name").innerText = name;
+                document.getElementById("sender-birthday").innerText = birthday;
+                document.getElementById("sender-gender").innerText = gender;
+                document.getElementById("sender-message").innerText = message;
+                return false;
+              }
+            </script>
+            <div class="form-output">
+              <div class="output-name">
+                <div class="output-name-question">
+                  <p class="data">Nama</p>
+                  <p class="data">Tanggal Lahir</p>
+                  <p class="data">Jenis Kelamin</p>
+                  <p class="data">Pesan</p>
+                </div>
+                <div class="output-name-colon">
+                  <p class="data">:</p>
+                  <p class="data">:</p>
+                  <p class="data">:</p>
+                  <p class="data">:</p>
+              </div>
+              <div class="output-data">
+                <p class="data"><span id="sender-name"></span></p>
+                <p class="data"><span id="sender-birthday"></span></p>
+                <p class="data"><span id="sender-gender"></span></p>
+                <p class="data"><span id="sender-message"></span></p>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr class="garis">
+    <footer>
+      <div class="container">
+        <div class="revou">
+          <img class="revou-logo"src="Assets/RevoU.png" alt="revou">
+          <p>&copy; Copyright Affandi Supriadi 2023, All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <hr class="garis">
+  </body>
+</html>
